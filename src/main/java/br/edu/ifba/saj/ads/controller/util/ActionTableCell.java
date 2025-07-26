@@ -17,7 +17,8 @@ public class ActionTableCell extends javafx.scene.control.TableCell<PanacheEntit
         if (empty) {
             setGraphic(null);
         } else {
-            Button btn = new Button("X");
+            String wastebasketEmoji = "🗑";
+            Button btn = new Button(wastebasketEmoji);
             btn.setOnAction(event -> {
                 PanacheEntity entity = getTableView().getItems().get(getIndex());
                 new Alert(Alert.AlertType.CONFIRMATION, "Delete " + entity.id + "?")

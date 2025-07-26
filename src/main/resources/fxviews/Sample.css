@@ -1,3 +1,37 @@
+Label {
+    -fx-font-family: "Monospace";
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+VBox>Label {
+    -fx-font-size: 25px;
+}
+
+VBox>HBox>Label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+TableView Button {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+    -fx-padding: 0px;
+}
+
+TableView Button:hover {
+    -fx-background-color: #c82333;
+}
+
+
 
 TableView .table-row-cell {
     -fx-background-color: white;
@@ -13,5 +47,5 @@ TableView .table-row-cell:hover {
 
 TableView .table-row-cell:selected {
     -fx-background-color: #007bff;
+    -fx-text-fill: white;
 }
-
