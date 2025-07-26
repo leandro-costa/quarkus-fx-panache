@@ -1,0 +1,17 @@
+
+TableView .table-row-cell {
+    -fx-background-color: white;
+}
+
+TableView .table-row-cell:odd {
+    -fx-background-color: #f8f9fa;
+}
+
+TableView .table-row-cell:hover {
+    -fx-background-color: #e9ecef;
+}
+
+TableView .table-row-cell:selected {
+    -fx-background-color: #007bff;
+}
+
