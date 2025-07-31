@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="root" alignment="CENTER" spacing="10.0" stylesheets="@custom-sample.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.ads.controller.YetAnotherSampleController">
+<VBox fx:id="root" alignment="CENTER" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" spacing="10.0" stylesheets="@custom-sample.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.ads.controller.YetAnotherSampleController">
       <Label text="%hello.world" />
       <ImageView pickOnBounds="true" preserveRatio="true">
             <Image url="@../images/quarkus-logo.png" />

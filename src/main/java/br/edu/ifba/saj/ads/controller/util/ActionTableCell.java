@@ -1,14 +1,18 @@
 package br.edu.ifba.saj.ads.controller.util;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import br.edu.ifba.saj.ads.model.AbstractModel;
+import javafx.geometry.Pos;
 
-public class ActionTableCell extends javafx.scene.control.TableCell<PanacheEntity, Void> {
-    private java.util.function.Consumer<PanacheEntity> deleteCallback;
+public class ActionTableCell extends javafx.scene.control.TableCell<AbstractModel, Void> {
+    private java.util.function.Consumer<AbstractModel> deleteCallback;
+    private String cssClass;
 
-    public ActionTableCell(java.util.function.Consumer<PanacheEntity> deleteCallback) {
+    public ActionTableCell(java.util.function.Consumer<AbstractModel> deleteCallback, String cssClass) {
         this.deleteCallback = deleteCallback;
+        this.cssClass = cssClass;
+        setAlignment(Pos.CENTER);
     }
 
     @Override
@@ -17,10 +21,10 @@ public class ActionTableCell extends javafx.scene.control.TableCell<PanacheEntit
         if (empty) {
             setGraphic(null);
         } else {
-            String wastebasketEmoji = "🗑";
-            Button btn = new Button(wastebasketEmoji);
+            Button btn = new Button();
+            btn.getStyleClass().add(cssClass);
             btn.setOnAction(event -> {
-                PanacheEntity entity = getTableView().getItems().get(getIndex());
+                AbstractModel entity = getTableView().getItems().get(getIndex());
                 new Alert(Alert.AlertType.CONFIRMATION, "Delete " + entity.id + "?")
                         .showAndWait()
                         .filter(response -> response == javafx.scene.control.ButtonType.OK)

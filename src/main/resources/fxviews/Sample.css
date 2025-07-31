@@ -13,21 +13,17 @@ VBox>HBox>Label {
     -fx-font-weight: bold;
 }
 
-TableView Button {
+.delete-button {
     -fx-background-color: #dc3545;
-    -fx-text-fill: white;
-    -fx-font-size: 20px;
-    -fx-font-weight: bold;
-    -fx-min-width: 30px;
-    -fx-min-height: 30px;
-    -fx-pref-width: 30px;
-    -fx-pref-height: 30px;
-    -fx-background-radius: 4px;
-    -fx-border-radius: 4px;
-    -fx-padding: 0px;
+    -fx-min-width: 20px;
+    -fx-min-height: 20px;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-padding: 0;
+    -fx-shape: "M 9.07,6.24 C 8.67,6.24 8.34,6.56 8.34,6.97 L 8.34,7.69 L 3.2,7.69 C 2.79,7.69 2.47,8.02 2.47,8.42 L 2.47,9.15 C 2.47,9.56 2.79,9.88 3.2,9.88 L 3.54,9.88 L 3.54,18.31 C 3.54,19.24 4.28,20 5.2,20 L 14.13,20 C 15.05,20 15.79,19.24 15.79,18.31 L 15.79,9.88 L 16.12,9.88 C 16.53,9.88 16.85,9.56 16.85,9.15 L 16.85,8.42 C 16.85,8.02 16.53,7.69 16.12,7.69 L 10.99,7.69 L 10.99,6.97 C 10.99,6.56 10.66,6.24 10.26,6.24 L 9.07,6.24 Z M 14.34,9.88 L 4.99,9.88 L 4.99,18.31 C 4.99,18.49 5.07,18.57 5.2,18.57 L 14.13,18.57 C 14.26,18.57 14.34,18.49 14.34,18.31 L 14.34,9.88 Z";
 }
 
-TableView Button:hover {
+.delete-button:hover {
     -fx-background-color: #c82333;
 }
 

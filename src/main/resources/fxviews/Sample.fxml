@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="10.0" stylesheets="@Sample.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.ads.controller.SampleController">
+<VBox alignment="CENTER" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" spacing="10.0" stylesheets="@Sample.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.ads.controller.SampleController">
    <children>
       <Label prefHeight="0.0" prefWidth="150.0" text="%hello.world" />
       <HBox alignment="TOP_CENTER" prefHeight="11.0" prefWidth="200.0">
@@ -23,6 +23,9 @@
             <TableColumn fx:id="tableColumAction" maxWidth="1.7976931348623157E308" minWidth="50" prefWidth="49.0" text="%action" />
          </columns>
       </TableView>
-      <Button mnemonicParsing="false" onAction="#onButtonClick" text="%save" />
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#onButtonClick" text="%save" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+      <Label fx:id="lblResult" />
+      <Button mnemonicParsing="false" onAction="#btActionFxml" text="Button" />
+      <TextField fx:id="txFilter" onKeyReleased="#filterTable" promptText="Filter" />
    </children>
 </VBox>
