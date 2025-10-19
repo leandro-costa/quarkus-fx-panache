@@ -1,0 +1,6 @@
+2025-07-31 12:23:57.686558-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MYENTITY" already exists; SQL statement:
+create table MyEntity (id uuid not null, field varchar(255), primary key (id)) [42101-230]
+2025-10-19 13:19:03.650667-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MYENTITY" already exists; SQL statement:
+create table MyEntity (id uuid not null, field varchar(255), primary key (id)) [42101-230]

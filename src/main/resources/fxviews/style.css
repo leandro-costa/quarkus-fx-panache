@@ -1,0 +1,97 @@
+.top {
+    -fx-background-color: green;
+}
+
+.main {
+    -fx-background-color: lightgreen;
+
+}
+
+.left {
+    -fx-background-color: green;
+
+}
+
+.bottom {
+    -fx-background-color: green;
+}
+
+
+
+.btn-login {
+    -fx-background-color: green;
+    -fx-background-radius: 25px;
+}
+
+.btn-login:hover {
+    -fx-background-color: lightgreen;
+}
+
+.btn-cancelar:pressed {
+    -fx-background-color: darkgreen;
+}
+
+.btn-cancelar {
+    -fx-background-color: rgb(12, 221, 221);
+    -fx-background-radius: 25px;
+}
+
+.btn-cancelar:hover {
+    -fx-background-color: lightgreen;
+}
+
+.btn-login:pressed {
+    -fx-background-color: darkgreen;
+}
+
+.btn-menu-selected {
+    -fx-background-color: lightgreen;
+    -fx-background-radius: 0;
+}
+.btn-menu {
+    -fx-background-color: green;
+    -fx-background-radius: 0;
+}
+
+.btn-menu:hover {
+    -fx-background-color: lightgreen;
+}
+
+.btn-menu:pressed {
+    -fx-background-color: darkgreen;
+}
+
+.btn-toolbar {
+    -fx-background-color: lightgreen;
+    -fx-background-radius: 0;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+}
+
+.btn-toolbar:hover {
+    -fx-background-color: rgb(208, 255, 208);
+}
+
+.btn-toolbar:pressed {
+    -fx-background-color: darkgreen;
+}
+
+.avatar{
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-padding: 10;
+    -fx-background-color: firebrick;
+}
+
+.google {
+    -fx-background-color:  lightgreen;
+    -fx-background-radius: 15px;
+    -fx-border-color: green;
+    -fx-border-radius: 15px;
+    -fx-border-width:  1px;    
+}
+
+.erro-class {
+    -fx-background-color:  red;
+}

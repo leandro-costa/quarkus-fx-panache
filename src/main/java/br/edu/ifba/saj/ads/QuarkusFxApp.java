@@ -27,8 +27,8 @@ public class QuarkusFxApp {
         });
 
         stage.setTitle("Hello World Quarkus + JavaFX + Panache ! 🪐");
-
-        setFxView("Sample");
+        setFxView("Login");
+        //setFxView("Sample");
         //setFxView("custom-sample");
     }
 
